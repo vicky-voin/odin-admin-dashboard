@@ -101,4 +101,52 @@
 
 .content
 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: min-content min-content;
+}
+
+.projects,
+.announcements,
+.trending
+{
+    padding: 24px 16px;
+}
+
+.section-title
+{
+    margin-bottom: 16px;
+}
+
+.projects
+{
+    grid-row: 1/3;
+}
+
+.projects-cards
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.card
+{
+    height: 100px;
+}
+
+.announcement
+{
+    height: 60px;
+}
+
+.trending-feed
+{
+    display: grid;
+    gap: 24px;
+}
+
+.user-profile
+{
+    height: 48px;
 }
