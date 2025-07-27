@@ -209,6 +209,8 @@
 .section-title
 {
     margin-bottom: 16px;
+    font-size: 1.1em;
+    font-weight: 450;
 }
 
 .projects
@@ -219,14 +221,67 @@
 .projects-cards
 {
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 16px;
 }
 
 .card
 {
-    height: 100px;
+    height: 200px;
+    padding: 32px 16px;
     background-color: white;
+    border: solid #f9ca13;
+    border-width: 0 0 0 8px;
+    border-radius: 8px;
+
+    display: grid;
+    justify-content: stretch;
+    grid-template-rows: min-content auto auto;
+}
+
+.card-title
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.card-text
+{
+    color: #818488;
+}
+
+.card-buttons
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, min-content);
+    gap: 28px;
+    justify-content: end;
+    align-content: end;
+}
+
+.card-buttons > button
+{
+    background-color: transparent;
+    border-width: 0;
+    width:28px;
+    height:28px;
+}
+
+.card-star
+{
+    background-image: url("img/star-plus-outline.svg");
+}
+
+.card-watch
+{
+    background-image: url("img/eye-plus-outline.svg");
+}
+
+.card-share
+{
+    background-image: url("img/share-variant-outline.svg");
 }
 
 .announcements-feed
