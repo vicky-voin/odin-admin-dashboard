@@ -287,11 +287,36 @@
 .announcements-feed
 {
     background-color: white;
+    border-radius: 8px;
+    padding: 36px 24px;
+
+    display: grid;
+    gap: 24px;
 }
 
 .announcement
 {
-    height: 60px;
+    width: 200px;
+}
+
+.announcement:last-child > .announcement-text
+{
+    border-bottom: 0px;
+    padding-bottom: 0;
+}
+
+.announcement-title
+{
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.announcement-text
+{
+    font-size: 0.8em;
+    color: #818488;
+    border-bottom: 1px solid #e1e8f0;
+    padding-bottom: 24px;
 }
 
 .trending-feed
